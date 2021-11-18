@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecipeDetailView: View {
-    // create a Recipe instances for receive the parameter from other view
+   
     var RecipeDetail : Recipe
     
     var body: some View {
@@ -55,7 +55,7 @@ struct RecipeDetailView: View {
 
 struct RecipeDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        
+        // create a Recipe instances for receive the parameter from other view
         let model = RecipeModel()
         
         RecipeDetailView(RecipeDetail: model.RecipesList[0])
