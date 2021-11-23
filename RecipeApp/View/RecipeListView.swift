@@ -9,7 +9,9 @@ import SwiftUI
 
 struct RecipeListView: View {
     
-    @ObservedObject var model = RecipeModel()
+    //@ObservedObject var model = RecipeModel()
+    //Change using environment object modifier
+    @EnvironmentObject var model : RecipeModel
     
     var body: some View {
         NavigationView {

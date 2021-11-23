@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220603D6274CA75000020C59 /* RecipeFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220603D5274CA75000020C59 /* RecipeFeatureView.swift */; };
 		221728182745409B003CAD6E /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221728172745409B003CAD6E /* RecipeDetailView.swift */; };
 		222C6595274C8BE5009F3ECA /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C6594274C8BE5009F3ECA /* Ingredient.swift */; };
 		22BEA2D3274A17FB00AF1979 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BEA2D2274A17FB00AF1979 /* RecipeTabView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		220603D5274CA75000020C59 /* RecipeFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeatureView.swift; sourceTree = "<group>"; };
 		221728172745409B003CAD6E /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
 		222C6594274C8BE5009F3ECA /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		22BEA2D2274A17FB00AF1979 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
@@ -105,9 +107,10 @@
 		22EDC7602743DC1900516DE0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				22BEA2D2274A17FB00AF1979 /* RecipeTabView.swift */,
+				220603D5274CA75000020C59 /* RecipeFeatureView.swift */,
 				22EDC7512743DA5900516DE0 /* RecipeListView.swift */,
 				221728172745409B003CAD6E /* RecipeDetailView.swift */,
-				22BEA2D2274A17FB00AF1979 /* RecipeTabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22EDC7662743DCB700516DE0 /* Recipe.swift in Sources */,
+				220603D6274CA75000020C59 /* RecipeFeatureView.swift in Sources */,
 				221728182745409B003CAD6E /* RecipeDetailView.swift in Sources */,
 				22EDC7682743DDAE00516DE0 /* RecipeModel.swift in Sources */,
 				22EDC7522743DA5900516DE0 /* RecipeListView.swift in Sources */,

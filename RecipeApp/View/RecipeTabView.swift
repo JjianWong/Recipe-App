@@ -16,7 +16,7 @@ struct RecipeTabView: View {
         TabView(selection: $defaultTab)
         {
             // mark : Features tab
-            Text("Recipe Features")
+            RecipeFeatureView()
                 .tabItem{
                     VStack {
                         Image(systemName: "star")
@@ -32,7 +32,10 @@ struct RecipeTabView: View {
                         Text("List")
                     }
                 } .tag(1)
-        } // end tab view
+        }
+        .environmentObject(RecipeModel())
+        // using environmentobject modifier so child view able access the data.
+        
     }
 }
 
