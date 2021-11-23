@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		221728182745409B003CAD6E /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221728172745409B003CAD6E /* RecipeDetailView.swift */; };
+		222C6595274C8BE5009F3ECA /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222C6594274C8BE5009F3ECA /* Ingredient.swift */; };
 		22BEA2D3274A17FB00AF1979 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BEA2D2274A17FB00AF1979 /* RecipeTabView.swift */; };
 		22EDC7502743DA5900516DE0 /* RecipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC74F2743DA5900516DE0 /* RecipeApp.swift */; };
 		22EDC7522743DA5900516DE0 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EDC7512743DA5900516DE0 /* RecipeListView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		221728172745409B003CAD6E /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		222C6594274C8BE5009F3ECA /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		22BEA2D2274A17FB00AF1979 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
 		22EDC74C2743DA5900516DE0 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EDC74F2743DA5900516DE0 /* RecipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeApp.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				22EDC7652743DCB600516DE0 /* Recipe.swift */,
+				222C6594274C8BE5009F3ECA /* Ingredient.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				221728182745409B003CAD6E /* RecipeDetailView.swift in Sources */,
 				22EDC7682743DDAE00516DE0 /* RecipeModel.swift in Sources */,
 				22EDC7522743DA5900516DE0 /* RecipeListView.swift in Sources */,
+				222C6595274C8BE5009F3ECA /* Ingredient.swift in Sources */,
 				22EDC7502743DA5900516DE0 /* RecipeApp.swift in Sources */,
 				22EDC76A2743E9F400516DE0 /* DataService.swift in Sources */,
 				22BEA2D3274A17FB00AF1979 /* RecipeTabView.swift in Sources */,
