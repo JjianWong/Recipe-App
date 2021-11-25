@@ -10,6 +10,7 @@ import SwiftUI
 struct RecipeDetailView: View {
    
     var RecipeDetail : Recipe
+    @State var potionSelectionIndex : Int = 2
     
     var body: some View {
         
@@ -20,6 +21,24 @@ struct RecipeDetailView: View {
                     .resizable()
                     .scaledToFill()
                 
+                
+                //MARK: Potion Picker
+                VStack (alignment: .leading) {
+                    Text("Pick Potion")
+                        .font(.headline)
+                    
+                    Picker("Potion", selection: $potionSelectionIndex ) {
+                        Text("2").tag(2)
+                        Text("4").tag(4)
+                        Text("6").tag(6)
+                        Text("8").tag(8)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .frame(width: 200)
+                }
+                .padding([.leading, .bottom])
+              
+                
                 //MARK : Ingredients
                 VStack(alignment: .leading){
                     Text("Ingredients")
@@ -27,7 +46,7 @@ struct RecipeDetailView: View {
                         .padding(.bottom, 1)
                     
                     ForEach(RecipeDetail.ingredients) {
-                        item in Text("•" + " " + item.name)
+                        item in Text("•" + RecipeModel.getPotion(ingredient: item, recipeServingSize: RecipeDetail.servings, targetServing: potionSelectionIndex) +  " " + item.name)
                     }
                     .padding(.bottom,1)
                 }
