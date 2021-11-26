@@ -21,6 +21,11 @@ struct RecipeDetailView: View {
                     .resizable()
                     .scaledToFill()
                 
+                //MARK: Recipe Name
+                Text(RecipeDetail.name)
+                    .font(Font.custom("Avenir Heavy", size: 28))
+                    .padding([.top, .leading, .bottom])
+                    
                 
                 //MARK: Potion Picker
                 VStack (alignment: .leading) {
@@ -33,6 +38,7 @@ struct RecipeDetailView: View {
                         Text("6").tag(6)
                         Text("8").tag(8)
                     }
+                    .font(Font.custom("Avenir Light", size: 15))
                     .pickerStyle(SegmentedPickerStyle())
                     .frame(width: 200)
                 }
@@ -42,11 +48,12 @@ struct RecipeDetailView: View {
                 //MARK : Ingredients
                 VStack(alignment: .leading){
                     Text("Ingredients")
-                        .font(.headline)
+                        .font(Font.custom("Avenir Heavy", size: 16))
                         .padding(.bottom, 1)
                     
                     ForEach(RecipeDetail.ingredients) {
                         item in Text("•" + RecipeModel.getPotion(ingredient: item, recipeServingSize: RecipeDetail.servings, targetServing: potionSelectionIndex) +  " " + item.name)
+                            .font(Font.custom("Avenir Light", size: 15))
                     }
                     .padding(.bottom,1)
                 }
@@ -56,18 +63,19 @@ struct RecipeDetailView: View {
                 VStack(alignment: .leading){
                     Text("Instruction")
                         .padding(.top, 5.0)
-                        .font(.headline)
+                        .font(Font.custom("Avenir Heavy", size: 16))
                         .padding(.bottom, 1.0)
                     
                     ForEach(0...RecipeDetail.directions.count-1, id: \.self) {
                         item in Text(String(item + 1) + ". " + RecipeDetail.directions[item])
+                            .font(Font.custom("Avenir Light", size: 15))
                     }.padding(.bottom,1)
                 }
                 .padding(.horizontal)
                 
             }//Master VStack
            
-        }.navigationBarTitle(RecipeDetail.name) //ScrollView End
+        } //ScrollView End
         
     }
 }
